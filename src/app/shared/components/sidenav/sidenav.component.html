@@ -1,0 +1,16 @@
+<div class="sidenav-container" [ngClass]="showSidenav ? 'opened' : 'closed'">
+  <ul class="sidenav-list">
+    <button href="#" class="sidenav-list-item securesum-button">
+      <mat-icon>space_dashboard</mat-icon>
+      <span *ngIf="showSidenav">Dashboard</span>
+    </button>
+    <button href="#" class="sidenav-list-item securesum-button">
+      <mat-icon>analytics</mat-icon>
+      <span *ngIf="showSidenav">Analytics</span>
+    </button>
+    <button href="#" class="sidenav-list-item securesum-button">
+      <mat-icon>event</mat-icon>
+      <span *ngIf="showSidenav">Calendar</span>
+    </button>
+  </ul>
+</div>

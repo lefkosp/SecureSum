@@ -1,0 +1,62 @@
+// src\app\shared\components\sidenav\sidenav.component.scss
+@import '../../../../styles.scss';
+
+.example-container {
+  height: calc(100vh - 64px);
+  .mat-sidenav {
+    padding: 8px;
+    min-width: 300px;
+  }
+  .mat-sidenav-content {
+    height: calc(100vh - 64px);
+  }
+}
+.menu-button {
+  text-transform: capitalize;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-icon-no-color {
+  color: rbga(0, 0, 0, 0.54);
+}
+
+.show-icons{
+  width: 10%;
+  visibility: visible !important;
+  overflow-x: hidden !important;
+  display: block !important;
+}
+
+.sidenav-container{
+  height: 100vh;
+  background-color: var(--accent-darker-color);
+}
+
+.sidenav-container.closed{
+  width: fit-content;
+}
+
+.sidenav-list{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  align-items: baseline;
+}
+
+.sidenav-list-item{
+  text-decoration: none;
+  color: var(--accent-contrast-main);
+  padding: 0.25rem 0.4rem 0.4rem 0.4rem;
+}
+
+.opened{
+  .sidenav-list-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
