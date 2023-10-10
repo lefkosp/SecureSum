@@ -1,2 +1,10 @@
-<app-sidenav>
-</app-sidenav>
+<div class="main-container">
+  <app-sidenav (activeButtonEmit)="activeSectionChanged($event)" />
+
+  <div class="main-content d-flex align-items-center flex-column w-100 h-100vh">
+    <h1>Welcome to SecureSum!🎉</h1>
+    <app-dashboard *ngIf="activeSection === 'dashboard'"/>
+    <!-- <app-analytics *ngIf="activeSection === 'analytics'"/>
+      <app-calendar *ngIf="activeSection === 'calendar'"/> -->
+  </div>
+</div>
